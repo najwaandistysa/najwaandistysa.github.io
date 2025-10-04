@@ -1,0 +1,219 @@
+:root {
+  --primary-color: #6C63FF;
+  /* Ungu */
+  --secondary-color: #8D99AE;
+  /* Abu-abu */
+  --light-bg: #F8F9FA;
+  /* Abu-abu muda */
+  --card-bg: #FFFFFF;
+  /* Putih */
+  --text-color: #4A4A4A;
+  /* Abu-abu gelap untuk teks */
+  --heading-color: #332D65;
+  /* Ungu gelap untuk judul */
+  --muted-text: #6c757d;
+  /* Abu-abu */
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  font-family: 'Lato', sans-serif;
+  padding-top: 5rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--card-bg) !important;
+  border-bottom: 1px solid #E0E0E0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1020;
+}
+
+.navbar-brand {
+  color: var(--heading-color) !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-family: 'Lato', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Section Spacing */
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Card Hover Effect */
+.card {
+  transition: all 0.3s ease;
+  background-color: var(--card-bg) !important;
+  color: var(--text-color);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Banner */
+.banner-card {
+  animation: fadeIn 1s ease-in-out;
+  overflow: hidden;
+
+  /* kode gradien */
+  background: hsla(186, 33%, 94%, 1);
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1);
+}
+
+/* Custom Banner */
+.banner-card {
+  background-color: var(--card-bg) !important;
+  animation: fadeIn 1s ease-in-out;
+  overflow: hidden;
+}
+
+.banner-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--heading-color);
+  font-size: 2.5rem;
+}
+
+/* Typing Effect */
+#typing-text {
+  display: inline-block;
+  min-width: 1ch;
+  white-space: nowrap;
+  border-right: .15em solid var(--primary-color);
+  animation: blink-caret .75s step-end infinite;
+  color: var(--primary-color);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* efek kursor mesin tik */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--primary-color);
+  }
+}
+
+/* Elemen Animasi */
+.animate-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5a54c9;
+  border-color: #5a54c9;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Footer */
+footer {
+  background-color: var(--card-bg) !important;
+  border-top: 1px solid #E0E0E0;
+  color: var(--muted-text) !important;
+}
+
+.footer-links a {
+  color: var(--muted-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Kunci Animasi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Tampilan Responsif */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem !important;
+  }
+
+  .card-body h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}

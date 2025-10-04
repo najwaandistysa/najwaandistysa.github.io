@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Web</title>
+  <!-- Kode CSS dari Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Google Fonts (preconnect) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts (Style) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;500&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- CSS Kustom Lokal -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Navbar (Menu Website) -->
+  <section class="p-0">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-code me-2" style="color: var(--primary-color);"></i>@najwandstyfaa
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#riwayat-pendidikan">Riwayat Pendidikan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#keahlian">Keahlian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyek">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#artikel">Artikel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hubungi-saya">Hubungi Saya</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Bagian Banner -->
+  <section class="py-5" style="background-color: var(--light-bg);">
+    <div class="container py-5">
+      <div class="card banner-card rounded-5 shadow-lg">
+        <div class="card-body p-4 p-md-5">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0 animate-up">
+              <div class="banner-text">
+                <h5 class="fw-bold" style="color: var(--text-color) !important;">Selamat datang di Personal Website</h5>
+                <h1><b>Najwa</b> Andisty Syifa Aulia</h1>
+                <p class="mb-0 fs-5">
+                  <span id="typing-text"></span>
+                </p>
+                <p class="fs-6" style="color: var(--text-color) !important;">SMK Negeri 8 Jember</p>
+              </div>
+            </div>
+            <div class="col-md-6 animate-up">
+              <img src="assets/img/nasa1bg.png" class="img-fluid w-100 rounded-5 shadow-lg" alt="Foto Profile">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bagian Riwayat Hidup -->
+  <section class="my-5" id="riwayat-pendidikan">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 animate-up">
+          <div class="card rounded-4 shadow card-hover">
+            <div class="card-body p-4">
+              <h3 class="mb-4 text-primary">
+                <i class="fas fa-graduation-cap me-2"></i>Riwayat Pendidikan
+              </h3>
+              <div class="card mb-3 border-start border-primary border-4 rounded-3">
+                <div class="card-body">
+                  <h5 class="fw-bold">SMKN 8 JEMBER</h5>
+                  <p class="mb-1">Jurusan Rekayasa Perangkat Lunak (RPL)</p>
+                  <small class="text-muted">2024 - Sekarang</small>
+                </div>
+              </div>
+              <div class="card border-start"
+                style="border-color: var(--secondary-color) !important; border-width: 4px !important; border-radius: 0.5rem;">
+                <div class="card-body">
+                  <h5 class="fw-bold">SMPN 2 PUGER</h5>
+                  <small class="text-muted">2021 - 2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 animate-up">
+          <div class="card rounded-4 shadow card-hover">
+            <div class="card-body p-4">
+              <h3 class="mb-4 text-success">
+                <i class="fas fa-cogs me-2"></i>Keahlian
+              </h3>
+              <div class="alert alert-success fw-bold rounded-pill text-center">
+                <i class="fab fa-java me-2"></i>Java
+              </div>
+              <div class="alert alert-success fw-bold rounded-pill text-center">
+                <i class="fab fa-html5 me-1"></i> HTML / <i class="fab fa-css3-alt me-1"></i> CSS / <i
+                  class="fab fa-js-square me-1"></i> Javascript
+              </div>
+              <div class="alert alert-success fw-bold rounded-pill text-center">
+                <i class="fab fa-bootstrap me-2"></i>Framework Bootstrap
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bagian Portofolio Proyek -->
+  <section class="py-5" id="proyek">
+    <div class="container">
+      <div class="mb-5 text-center animate-up">
+        <h2 class="fw-bold" style="color: var(--heading-color);">
+          <i class="fas fa-briefcase me-2" style="color: var(--primary-color);"></i>Portofolio Saya
+        </h2>
+        <p class="text-muted">Beberapa proyek yang pernah saya kerjakan</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col animate-up">
+          <div class="card h-100 rounded-4 shadow-sm card-hover">
+            <img src="assets/img/gsFoto.png" class="card-img-top rounded-top-4" alt="Proyek 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Website "GALERI SENI NUSANTARA"</h5>
+              <p class="card-text text-muted">Website ini adalah sebuah platform galeri seni online yang dibuat untuk
+                memamerkan beragam karya seni dari Nusantara. Pengunjung dapat menjelajahi koleksi yang tersedia,
+                melihat detail setiap karya, dan mendapatkan informasi lengkap tentang seniman atau latar belakangnya.
+              </p>
+              <p class="card-text"><small class="text-muted">Teknologi: HTML, CSS, JavaScript, Bootstrap</small></p>
+              <div class="mt-auto d-flex justify-content-between">
+                <a href="https://website-galeri-seni.vercel.app/" target="_blank" class="btn btn-primary btn-sm">Lihat
+                  Demo</a>
+                <a href="https://github.com/najwaandistysa/website-galeri-seni" target="_blank"
+                  class="btn btn-secondary btn-sm">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col animate-up">
+          <div class="card h-100 rounded-4 shadow-sm card-hover">
+            <img src="assets/img/nusantaraD'studio.png" class="card-img-top rounded-top-4" alt="Proyek 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Website Company Profile "NUSANTARA D'STUDIO"</h5>
+              <p class="card-text text-muted">Website Ini adalah website profil perusahaan yang dirancang untuk
+                menampilkan informasi dasar tentang Nusantara D'Studio. Isinya mencakup profil, fasilitas, dan galeri
+                kegiatan. Desainnya responsif, sehingga mudah diakses di perangkat apa pun.</p>
+              <p class="card-text"><small class="text-muted">Teknologi: HTML, CSS, JavaScript, Bootstrap</small></p>
+              <div class="mt-auto d-flex justify-content-between">
+                <a href="https://website-nusantara-d-studio.vercel.app/" target="_blank"
+                  class="btn btn-primary btn-sm">Lihat Demo</a>
+                <a href="https://github.com/najwaandistysa/website-nusantara-d-studio" target="_blank"
+                  class="btn btn-secondary btn-sm">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bagian Artikel -->
+  <section class="py-5" id="artikel">
+    <div class="container">
+      <div class="mb-5 text-center animate-up">
+        <h2 class="fw-bold" style="color: var(--heading-color);">
+          <i class="fas fa-newspaper me-2" style="color: var(--primary-color);"></i>Artikel Saya
+        </h2>
+        <p class="text-muted">Cerita dan pengetahuan yang saya bagikan</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col animate-up">
+          <div class="card h-100 rounded-4 shadow-sm card-hover">
+            <img
+              src="https://www.hostinger.com/id/tutorial/wp-content/uploads/sites/37/2021/01/featured-image-artikel-apa-itu-php.png"
+              class="card-img-top rounded-top-4" alt="Artikel 1">
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title fw-bold">Apa Itu PHP? Memahami Arti PHP, Manfaat, dan Penggunaannya</h6>
+              <a href="https://www.hostinger.com/id/tutorial/apa-itu-php" target="_blank"
+                class="btn btn-primary btn-sm mt-auto">Baca Artikel <i class="fas fa-external-link-alt ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col animate-up">
+          <div class="card h-100 rounded-4 shadow-sm card-hover">
+            <img src="https://www.petanikode.com/img/cover/javascript.png" class="card-img-top rounded-top-4"
+              alt="Artikel 2">
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title fw-bold">Pemrograman JavaScript: Langkah Awal Belajar JavaScript</h6>
+              <a href="https://www.petanikode.com/javascript-dasar/" target="_blank"
+                class="btn btn-primary btn-sm mt-auto">Baca Artikel <i class="fas fa-external-link-alt ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col animate-up">
+          <div class="card h-100 rounded-4 shadow-sm card-hover">
+            <img src="https://www.petanikode.com/img/cover/laravel-11.png" class="card-img-top rounded-top-4"
+              alt="Artikel 3">
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title fw-bold">Tutorial Laravel 11 untuk Pemula: Langsung Bisa bikin CRUD!</h6>
+              <a href="https://www.petanikode.com/laravel-11/" target="_blank"
+                class="btn btn-primary btn-sm mt-auto">Baca Artikel <i class="fas fa-external-link-alt ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bagian Hubungi Saya -->
+  <section class="py-5" id="hubungi-saya">
+    <div class="container">
+      <div class="card text-center border-primary rounded-4 shadow-sm animate-up">
+        <div class="card-body p-5">
+          <h5 class="card-title fw-bold" style="color: var(--heading-color);">
+            <i class="fas fa-headset me-2" style="color: var(--primary-color);"></i>Hubungi Saya!
+          </h5>
+          <p class="card-text text-muted">Jika ada keperluan, silahkan hubungi saya di</p>
+          <a href="https://wa.me/6282245341389" target="_blank" class="btn btn-success btn-lg fw-bold rounded-pill">
+            <i class="fab fa-whatsapp me-2"></i>Whatsapp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bagian Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Najwa Andisty Syifa Aulia. All Rights Reserved.</p>
+      <p class="mb-0 footer-links">
+        <a href="https://wa.me/6282245341389" target="_blank" class="me-3">
+          <i class="fab fa-whatsapp"></i> Whatsapp
+        </a>
+        <a href="https://www.instagram.com/najwandstyfaa" target="_blank" class="me-3">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="mailto:najwaandistysyifaaulia@gmail.com">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
